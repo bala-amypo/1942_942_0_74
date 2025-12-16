@@ -1,7 +1,7 @@
 package com.example.demo.entity;
-import jakarta.persistence.entity;
+import jakarta.persistence.Entity;
 
-@entity
+@Entity
 public class Studententity{
     private Long id;
     private String name;
