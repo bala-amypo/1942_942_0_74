@@ -111,6 +111,15 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
+
+                <configuration>
+                    <forkCount>0</forkCount>
+                    <reuseForks>false</reuseForks>
+                    <testNGArtifactName>org.testng:testng</testNGArtifactName>
+
+                    <useModulePath>false</useModulePath>
+                </configuration>
+
                 <dependencies>
                     <dependency>
                         <groupId>org.apache.maven.surefire</groupId>
